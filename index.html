@@ -1,18 +1,337 @@
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        particlesJS('particles-js', {
-            particles: {
-                number: { value: 80 },
-                color: { value: '#ffffff' },
-                shape: { type: 'circle' },
-                opacity: { value: 0.5 },
-                size: { value: 3 },
-                move: {
-                    enable: true,
-                    speed: 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ravi Chandra Talluri - Data Engineer and Analytics Professional Portfolio. Expertise in data engineering, analytics, and machine learning.">
+    <meta name="keywords" content="Data Engineer, Analytics, Machine Learning, Portfolio, Ravi Chandra Talluri">
+    <meta name="author" content="Ravi Chandra Talluri">
+    <title>Ravi Chandra Talluri | Portfolio</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Ravi Chandra Talluri | Portfolio">
+    <meta property="og:description" content="Data Engineer and Analytics Professional Portfolio">
+    <meta property="og:image" content="https://ravichandratalluri.github.io/images/profile.jpg">
+    <meta property="og:url" content="https://ravichandratalluri.github.io">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ravi Chandra Talluri | Portfolio">
+    <meta name="twitter:description" content="Data Engineer and Analytics Professional Portfolio">
+    <meta name="twitter:image" content="https://ravichandratalluri.github.io/images/profile.jpg">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </button>
+    </div>
+
+    <!-- Particle.js Background -->
+    <div id="particles-js"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.svg" alt="RT Logo">
+            </div>
+            <nav>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content" data-aos="fade-up">
+                    <h1 class="typing-text">Data Engineer & Analytics Professional</h1>
+                    <p>Transforming Data into Actionable Insights</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn primary">View Projects</a>
+                        <a href="#contact" class="btn secondary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 data-aos="fade-up">About Me</h2>
+                <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+                    <div class="profile-image">
+                        <img src="images/profile.jpg" alt="Ravi Chandra Talluri">
+                    </div>
+                    <div class="about-text">
+                        <p>I am a seasoned Data Engineer and Analyst with a Master's Degree in Business Analytics from the University of North Texas. With expertise in:</p>
+                        <ul class="expertise-list">
+                            <li><i class="fas fa-database"></i>Real-time data pipelines</li>
+                            <li><i class="fas fa-chart-line"></i>Advanced data analytics</li>
+                            <li><i class="fas fa-cogs"></i>Business process optimization</li>
+                            <li><i class="fas fa-boxes"></i>Inventory management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 data-aos="fade-up">Technical Skills</h2>
+                <div class="skills-grid" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Engineering</h3>
+                        <p>SQL, ETL, Data Warehousing</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 95%"></div>
+                        </div>
+                        <div class="skill-percentage">95%</div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming</h3>
+                        <p>Python, R, Java</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 90%"></div>
+                        </div>
+                        <div class="skill-percentage">90%</div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud & Big Data</h3>
+                        <p>AWS, Azure, Databricks</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 85%"></div>
+                        </div>
+                        <div class="skill-percentage">85%</div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Data Visualization</h3>
+                        <p>Tableau, Power BI</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 92%"></div>
+                        </div>
+                        <div class="skill-percentage">92%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 data-aos="fade-up">Featured Projects</h2>
+                
+                <!-- Project Filters -->
+                <div class="project-filters" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="data-engineering">Data Engineering</button>
+                    <button class="filter-btn" data-filter="analytics">Analytics</button>
+                    <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Turo Project -->
+                    <article class="project-card data-engineering analytics" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="images/project-turo.jpg" alt="Turo Data Analysis Project">
+                        </div>
+                        <div class="project-content">
+                            <h3>Turo Website Analysis</h3>
+                            <p>Comprehensive analysis using SQL, Tableau, and QlikView for enhanced business insights.</p>
+                            <div class="tech-stack">
+                                <span>SQL</span>
+                                <span>Tableau</span>
+                                <span>QlikView</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn"><i class="fab fa-github"></i> View Code</a>
+                                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- NBA Analysis Project -->
+                    <article class="project-card analytics machine-learning" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="images/project-nba.jpg" alt="NBA Data Mining Project">
+                        </div>
+                        <div class="project-content">
+                            <h3>NBA Career Prediction</h3>
+                            <p>Machine learning model predicting NBA players' career spans with 85% accuracy.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>Data Mining</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn"><i class="fab fa-github"></i> View Code</a>
+                                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Supply Chain Project -->
+                    <article class="project-card data-engineering machine-learning" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="images/project-supply-chain.jpg" alt="Supply Chain Monitoring">
+                        </div>
+                        <div class="project-content">
+                            <h3>Supply Chain Monitoring</h3>
+                            <p>Real-time transaction monitoring system using advanced ML algorithms.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>ML</span>
+                                <span>Real-time Data</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn"><i class="fab fa-github"></i> View Code</a>
+                                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 data-aos="fade-up">Get In Touch</h2>
+                <div class="contact-content" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <a href="mailto:ravichandratalluri29@gmail.com">ravichandratalluri29@gmail.com</a>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fab fa-linkedin"></i>
+                            <h3>LinkedIn</h3>
+                            <a href="https://linkedin.com/in/ravichandratalluri" target="_blank">Connect on LinkedIn</a>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fab fa-github"></i>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/ravichandratalluri" target="_blank">View Projects</a>
+                        </div>
+                    </div>
+                    <form id="contact-form" class="contact-form" data-aos="fade-up">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="assets/logo.svg" alt="RT Logo">
+                        <p>Data Engineer & Analytics Professional</p>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Connect</h3>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/ravichandratalluri" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/ravichandratalluri" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="mailto:ravichandratalluri29@gmail.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; <span id="current-year"></span> Ravi Chandra Talluri. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll to Top Button -->
+        <button id="scroll-top" aria-label="Scroll to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <div class="lightbox-content">
+                <img src="" alt="" id="lightbox-img">
+                <div class="lightbox-caption"></div>
+            </div>
+            <button class="lightbox-prev" aria-label="Previous image">&lt;</button>
+            <button class="lightbox-next" aria-label="Next image">&gt;</button>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            particlesJS('particles-js', {
+                particles: {
+                    number: { value: 80 },
+                    color: { value: '#ffffff' },
+                    shape: { type: 'circle' },
+                    opacity: { value: 0.5 },
+                    size: { value: 3 },
+                    move: {
+                        enable: true,
+                        speed: 2
+                    }
                 }
-            }
+            });
         });
-    });
-</script>
+    </script>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

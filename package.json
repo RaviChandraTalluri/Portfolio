@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Ravi Chandra Talluri's Portfolio",
+  "scripts": {
+    "build": "echo 'Add build script here'",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "Ravi Chandra Talluri",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
+} 
